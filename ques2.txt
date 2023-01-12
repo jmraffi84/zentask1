@@ -1,1 +1,61 @@
 BLOG ON OBJECTS AND ITS INTERNAL REPRESENTATION
+-----------------------------------------------
+ : object are stand alone, with properties.
+
+Creating Objects in JavaScript:
+By object literal
+By creating instance of Object directly (using new keyword)
+ Consider a person as an object:
+ He will have a
+ 1. Name
+ 2. Height
+ 3. Weight
+ 4. Eye color
+ 5. Unqine Finger perint and so on.
+
+ In javascript everything is a object and will have a internal representing.
+
+ To call his indiviguality breakup 
+ we call as person.name or Person["Name"]
+ The more accurant way to call a object closed bracket is recommended.
+ In Some cases .notation will have error.
+
+
+
+ Object are Key value pairs.
+
+ class obj{
+     
+     obj1(){
+            key      Value 
+        //person1 : lucifer
+        console.log('This is obj1')
+     }
+     obj2(){
+        key    Value 
+        //2 : manifest
+         console.log('This is obj1')
+     }
+
+ }
+    
+     
+ 
+
+So above both has its own key value pair. 
+
+creating a instance of an object: 
+
+    var objNew = new obj()
+    if we console.log(objNew)
+    
+    result will be : obj1 & obj2
+
+    if we console(objNew.obj1)// dot notation
+        we will get result as This is obj1
+ 
+
+                    
+
+
+
