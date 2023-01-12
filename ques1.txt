@@ -1,1 +1,54 @@
 HTTP 1.1  VS HTTP 2
+-------------------
+
+HTTP 1.1 : 
+    HTTP stand for Hyper text protoco, it is used for clinet side communication.
+    If we send a request we get a response (client asking for a information & server 
+    response it back). HTTP1.1 was created in 1997 & HTTP2 was created in 2015.
+
+    For better underatnding lets asssume a we need information on Shakespeare novel.
+    when a request via HTTP1.1 -> it will send one single page of novel at a time, then 
+    again request then second page will appear and time consuming for this transfer will
+    take much longer and several request and sereval response.
+
+    While sending a request and getting a response TCP (Transmission Control Protocol), works 
+    in between to transfer request and response. where the connection will not
+    lost because we keep the live header alive so the connection is still open between
+    clent and server. Thus there is a persistent connection which means several requests
+    & responses are merged in a single connection. For these kind of drawbacks in 2015
+    HTTP2 was created.     
+
+HTTP 2 : 
+
+    HTTP2, Which came to make the performace better and bug fix of HTTP 1.1 was solved
+    which is currently in use.
+
+    What makes HTTP2 Special:
+        It takes a request from the client and gives the full response at one streach. 
+        Like the example we saw before novel of Shakespeare request is send and it comes
+        will all the information images and any video rendering that contains. So one request
+        full information of that particular request was send fully to client. So he
+        can use it at his comfort. Were the connection on TCP ends after that response.
+        HTTP2 WORKS IN A BINARY FORMAT to make is response fast.
+
+
+
+        HIGH LIGHTS: 
+
+        HTTP1.1                                     
+
+        1 . It works on text format.
+        2.  There is a head line blocking which
+            keeps behind the other request. Until 
+            first request is completed.
+        3.  It compress data by itself.
+
+
+        HTTP 2 
+
+        1.  It works on binary format.
+        2.  No head blocking, information receives in 
+            single request.
+        3.  It uses HPACK for data compression.
+            (a compression format for efficiently 
+            representing HTTP header fields)           
